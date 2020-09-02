@@ -1,5 +1,5 @@
 #!/bin/bash
-REPOSITORIES=(Tourtogether Tourtogether.APIGateway)
+REPOSITORIES=(Tourtogether Tourtogether.APIGateway Tourtogether.Services.Identity)
 
 if [ "$1" = "-p" ]
   then
