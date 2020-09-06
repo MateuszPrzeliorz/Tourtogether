@@ -11,6 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tourtogether", "Tourtogethe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E3DD88B3-1A23-4187-B090-41B28B852C36}"
 	ProjectSection(SolutionItems) = preProject
+		scripts\docker-build-local-all.sh = scripts\docker-build-local-all.sh
+		scripts\dotnet-build-local-all.sh = scripts\dotnet-build-local-all.sh
+		scripts\dotnet-run-all.sh = scripts\dotnet-run-all.sh
 		scripts\git-clone-all.sh = scripts\git-clone-all.sh
 		scripts\git-pull-all.sh = scripts\git-pull-all.sh
 	EndProjectSection

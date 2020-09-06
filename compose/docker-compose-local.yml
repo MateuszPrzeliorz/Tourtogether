@@ -1,0 +1,23 @@
+version: "3.5"
+
+services:
+  apigateway:
+    image: tourtogether.apigateway:local
+    container_name: apigateway
+    ports:
+      - '6000:6000'
+    networks:
+      - tourtogether
+
+  identity-service:
+    image: tourtogether.services.identity:local
+    container_name: identity-service
+    ports:
+      - '6001:6000'
+    networks:
+      - tourtogether
+
+networks:
+  tourtogether:
+    name: tourtogether-network
+    external: false
