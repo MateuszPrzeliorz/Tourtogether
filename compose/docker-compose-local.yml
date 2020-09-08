@@ -5,7 +5,7 @@ services:
     image: tourtogether.apigateway:local
     container_name: apigateway
     ports:
-      - '6000:6000'
+      - '6001:6000'
     networks:
       - tourtogether
 
@@ -13,11 +13,11 @@ services:
     image: tourtogether.services.identity:local
     container_name: identity-service
     ports:
-      - '6001:6000'
+      - '6002:6000'
     networks:
       - tourtogether
 
 networks:
   tourtogether:
     name: tourtogether-network
-    external: false
+    external: true
